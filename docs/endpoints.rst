@@ -34,7 +34,7 @@ Static images
   * ``/styles/{id}/static/{minx},{miny},{maxx},{maxy}/{width}x{height}[@2x].{format}`` (area-based)
   * ``/styles/{id}/static/auto/{width}x{height}[@2x].{format}`` (autofit path -- see below)
 
-* All the static image endpoints additionally support following query parameters:
+* All the static image endpoints additionally support the following query parameters:
 
   * ``path`` - ``((fill|stroke|width)\:[^\|]+\|)*(enc:.+|-?\d+(\.\d*)?,-?\d+(\.\d*)?(\|-?\d+(\.\d*)?,-?\d+(\.\d*)?)+)``
 
@@ -70,7 +70,7 @@ Static images
 
       * ``scale`` - Factor to scale image by
 
-        * e.g. ``0.5`` - Scales the image to half it's original size
+        * e.g. ``0.5`` - Scales the image to half its original size
 
       * ``offset`` - Image offset as positive or negative pixel value in format ``[offsetX],[offsetY]``
 
@@ -108,7 +108,7 @@ Static files
 
   * This feature can be used to serve ``geojson`` files for styles and rendered tiles.
 
-    * Keep in mind, that each rendered tile loads the whole geojson file, if performance matters a conversion to a tiled format (e.g. with https://github.com/felt/tippecanoe)may be a better approch.
+    * Keep in mind, that each rendered tile loads the whole geojson file, if performance matters a conversion to a tiled format (e.g. with https://github.com/felt/tippecanoe ) may be a better approach.
 
     * Use ``file://{filename}`` to have matching paths for both endoints
 
